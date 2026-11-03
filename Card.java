@@ -19,7 +19,12 @@ public class Card{
 		return value;
 	}
 	
-	public String getPoints() {
+	public int getPoints() {
 		return points;
+	}
+	
+	public void setPoints(int points) {
+		this.points = points;
+		
 	}
 }

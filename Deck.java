@@ -5,7 +5,7 @@ public class Deck {
 	
 	/* constructor
 	 * takes in 3 arrays from blackjack class
-	 * 
+	 * different based on game played
 	 */
 	public Deck(String[] dsuits, String[] dvalues, int[] dpoints) {
 		//constructor - need to initialize
@@ -25,16 +25,25 @@ public class Deck {
 			
 	}
 	
+	/*shuffle method
+	 *fandomizes deck
+	 */
 	public void shuffle() {
 	 //shuffles cards into random order
 	}
 	
+	/*deal method
+	 * deals one card
+	 */
 	public Card deal() {
 		Card card = deckOfCards[cardsDealt]; //deal next undealt card
 		cardsDealt++;
-		return card;
+		return card; //returns singular card
 	}
-	
+
+	/*deal method
+	 * deals multiple cards based on input of how many cards need to be dealt
+	 */	
 	public Card[] dealCard(int numCards) { //parameter is how many cards are dealt per person
 		Card[] cardsMultiple = new Card[numCards]; //new array w length of numCards
 		for (int j=0; j<numCards; j++) { //loop through number of cards
@@ -43,7 +52,7 @@ public class Deck {
 			cardsDealt++;
 
 		}
-		return cardsMultiple;
+		return cardsMultiple; //returns array of cards
 	
 	}
 }

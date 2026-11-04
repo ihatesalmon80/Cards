@@ -15,9 +15,11 @@ public class Deck {
 		deckOfCards = new Card[dsuits.length * dvalues.length];
 		
 		int index = 0;
+		int suitsLength = dsuits.length;
+		int valuesLength = dvalues.length;
 
-		for (int i = 0; i < dsuits.length; i++) { //looping through all suits
-			for (int j = 0; j < dvalues.length; j++) { //looping through all values within each suit
+		for (int i = 0; i < suitsLength; i++) { //looping through all suits
+			for (int j = 0; j < valuesLength; j++) { //looping through all values within each suit
 				deckOfCards[index] = new Card(dsuits[i], dvalues[j], dpoints[j]); //setting each newly made card to an index in the deck
 				index++;
 			}

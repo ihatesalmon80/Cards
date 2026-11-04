@@ -32,6 +32,7 @@ public class Deck {
 	 */
 	public void shuffle() {
 	 //shuffles cards into random order
+		System.out.println("Deck is Shuffled!");
 	}
 	
 	/*deal method
@@ -57,4 +58,8 @@ public class Deck {
 		return cardsMultiple; //returns array of cards
 	
 	}
+	
+	//toString method
+//	public String toString(
+		//return //use get functions to get suit, val, points, etc
 }
